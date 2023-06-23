@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS tescha;
+
+USE tescha;
+
+CREATE TABLE encuestas (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(100) NOT NULL,
+  edad INT NOT NULL,
+  carrera VARCHAR(100) NOT NULL,
+  experiencia TEXT NOT NULL
+);

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consulta de Formulario</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Consulta de Formulario</h1>
+  <form action="consultas.php" method="POST">
+ <!--Seleccionar todos los datos--> 
+<label for="nombre">Matricula:</label>
+<input type="text" id="matricula" name="matricula" required><br><br>
+ <!--<label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>-->
+    <input type="submit" value="Consultar">
+      
+  </form>
+ 
+  <canvas id="myChart"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
+
+   

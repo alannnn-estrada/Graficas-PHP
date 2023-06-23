@@ -1,0 +1,74 @@
+jQuery(document).ready(function(){
+jQuery('#main img').addClass('img-responsive');	
+//jQuery('#main .content a[href$=".pdf"]').addClass('pdf');
+jQuery('#main .content a[href$=".xls"]').addClass('excel');
+jQuery('#main .content a[href$=".xlsx"]').addClass('excel');
+jQuery('#main .content a[href$=".doc"]').addClass('doc');
+jQuery('#main .content a[href$=".docx"]').addClass('doc');
+jQuery('#main .content a[href$=".ppt"]').addClass('ppt');
+jQuery('#main .content a[href$=".pptx"]').addClass('ppt');
+jQuery('#right_a .menu .expanded .menu ').parent().addClass('leaf');
+
+jQuery( "#google-appliance-block-form #edit-search-keys,#search-block-form .form-text" ).attr( "placeholder", "¿Qué estás buscando?" );
+jQuery("#google-appliance-block-form #edit-actions #edit-submit ,#google-appliance-block-form #edit-actions #edit-submit--3, #google-appliance-search-form #edit-basic #edit-submit, #search-block-form .form-submit").replaceWith('<button id="edit-submit" name="op"type="submit" class="btn btn-xs form-submit botonbuscadorr">&nbsp;&nbsp;&nbsp;<span style="color:#ffffff" class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;</button>');
+jQuery("#google-appliance-block-form #edit-actions #edit-submit, #google-appliance-search-form #edit-basic #edit-submit").parent().parent().parent().addClass('buscadorcentrado');
+jQuery("#edit-search-keys").attr("size", "");
+jQuery("#search-block-form .form-text, #google-appliance-block-form .form-text").attr("style", "width:70%");
+jQuery("#edit-actions").parent().addClass("col-xs-12 col-sm-12 col-md-12 col-lg-12");
+jQuery("#edit-actions").parent().parent().addClass("row");
+});
+
+jQuery(document).ready(function() {
+var n=jQuery('#detallefooter').height();
+jQuery('#identidad').css("height",n);
+jQuery(window).resize(function() {
+  var sizeventana=jQuery( window ).width();
+  if(sizeventana>768){
+var n=jQuery('#detallefooter').height();
+jQuery('#identidad').css("height",n);
+}
+else{
+jQuery('#identidad').css("height",'182px');
+}
+
+
+});
+});
+
+jQuery(document).ready(function() {
+jQuery(window).resize(function() {
+  var sizeventana=jQuery( window ).width();
+  if(sizeventana<768){
+jQuery('.imgzigzag img').each(function(index){
+var enlace=jQuery(this);
+enlace.parent().parent().children('.textozigzag').append(enlace);
+
+
+});
+}
+else{
+jQuery('.textozigzag img').each(function(index){
+var enlace=jQuery(this);
+enlace.parent().parent().children('.imgzigzag').append(enlace);
+
+
+});
+
+}
+
+});
+});
+/*
+jQuery( document ).ready(function() {
+  jQuery('#slide-1').attr({
+    'data-thumb':"https://dgsei.edomex.gob.mx/sites/dgsei.edomex.gob.mx/files/files/presea_2022.png", 
+ 'src':"https://dgsei.edomex.gob.mx/sites/dgsei.edomex.gob.mx/files/files/presea_2022.png"
+});
+
+  jQuery('.nivo-imageLink:eq(1)').attr('href','https://edomex.gob.mx/presea_edomex');
+
+
+});*/
+jQuery(document).ready(function () {
+  jQuery('#modalVeda').modal('show');
+});

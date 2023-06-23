@@ -1,0 +1,96 @@
+ /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 15px;
+      background-color: #f2f2f2;
+    }
+    
+    /* Estilos del formulario */
+    form {
+      max-width: 1025px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+section{
+      text-align: right;
+      padding: 10px;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+}
+    h2 {
+      text-align: center;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 2px;
+    }
+    
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="tel"]
+    {
+      width: 32%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+#carre{
+   width: 25%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 5px;  
+}
+  #espec{
+   width: 25%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 5px;  
+}  
+     .button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 9px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+blockquote{
+max-width: 1025px;
+margin: 0 auto;
+clear: both;
+font-size: 12px;
+text-align: justify;
+padding: 10px 10px;
+border-top: 2px solid #999999
+}   
+   

@@ -1,0 +1,103 @@
+body {
+    background-image: url(imagen7.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+form {
+    width: 523px;
+    
+    background: rgba(0,0,0,0,4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton{
+    background: #31384a;
+    color: #fff;
+    padding: 10px;
+    width: 235px;
+    margin-left: 0px;
+    margin-right: 9px;
+     
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+#boton2{
+    background: #31384a;
+    color: #fff;
+    padding: 10px;
+    width: 235px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+#boton2:hover {
+    cursor: pointer;
+}
+
+#boton3{
+    background: #31384a;
+    color: #fff;
+    padding: 10px;
+    width: 230px;
+    margin-left: 130px;
+    margin-right: 50px;
+
+}
+
+#boton3:hover {
+    cursor: pointer;
+}
+@media (max-width:480px){
+    form{
+        width: 100%;
+    }
+}
+.caja{
+    
+}
+.caja2{
+    float: right;
+    margin-right: 80px;
+}
+.container-clock {
+    text-align: center;
+}
+
+.container-clock h1 {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.container-clock p {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

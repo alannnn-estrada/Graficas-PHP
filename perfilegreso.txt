@@ -1,0 +1,22 @@
+CREATE DATABASE perfilegresados;
+USE perfilegresados;
+CREATE TABLE egresados (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  fecha DATE,
+  apellidoP VARCHAR(50),
+  apellidoM VARCHAR(50),
+  nombres VARCHAR(50),
+  matricula VARCHAR(20),
+  curp VARCHAR(18),
+  anios INT,
+  genero enum ('hombre', 'mujer', 'otro'), 
+  ecivil enum ('casado', 'soltero','divorciado','viudo'),
+  domicilio VARCHAR(100),
+  colonia VARCHAR(50),
+  municipio VARCHAR(50),
+  telular VARCHAR(15),
+  tcasa VARCHAR(15),
+  correo VARCHAR(50),
+  carrera VARCHAR(50),
+  especialidad VARCHAR(50)
+);

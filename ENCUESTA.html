@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+<head>
+   
+  <title>Encuestade satisfacción y seguimiento para egresadas y egresados TESCHA</title>
+<link rel="stylesheet"href="estilos/formperfil.css">
+</head>
+     
+<body>
+    <center><img src="IMG/banner%20encuesta.png"></center>
+<h2>PEFIL DEL EGRESADO</h2>
+<form action="perfilegresado.php" method="POST">
+    <section>
+   <label> FECHA: <input type="date" id="Fecha" name="fecha" required></label>
+    </section>
+    <label for="nombre">1.Nombre completo:</label>
+
+    <input type="text" id="apellidop" name="apellidop" placeholder="Apellido Paterno" maxlength="30"  required autofocus/>
+    
+    <input type="text" id="apellidom" name="apellidom" placeholder="Apellido Materno" maxlength="30"  required autofocus/>
+   
+    <input type="text" id="nombre" name="nombres" placeholder="Nombre(s)" maxlength="30" required autofocus/>
+    <input type="text" id="Matricula" name="matricula" placeholder="2. Matrícula" maxlength="30" required autofocus/>
+    <input type="text" id="curp" name="curp" placeholder="3. CURP" maxlength="30" required autofocus/><!--pattern="[a-zA-Z0-9]+" --> 
+    <input type="number" id="Anios" name="anios" placeholder="4. Años cumplidos" maxlength="2" required autofocus/> <br>
+    
+    <fieldset><legend>5. Genero</legend>
+    <label><input type="radio" name="genero" value="hombre" checked> Hombre</label>
+    <label><input type="radio" name="genero" value="mujer"> Mujer</label>
+    <label><input type="radio" name="genero" value="otro"> Otro</label>
+    </fieldset><br>
+    <fieldset>
+    <legend>6.Estado civil</legend>
+    <label><input type="radio" id="Casado" name="ecivil" value="casado" checked>Casado (a)</label>
+    <label><input type="radio" id="soltero" name="ecivil" value="soltero">Soltero (a)</label>
+    <label><input type="radio" id="divorciado" name="ecivil" value="otro">Divorciado (a)</label>
+    <label><input type="radio" id="Viudo" name="ecivil" value="otro">Viudo(a)</label>
+    </fieldset><br>
+    <fieldset>
+    <legend>7. Domicilio</legend>
+
+    <input type="text" id="Domicilio" name="domicilio" placeholder="Domicilio actual" maxlength="30" required autofocus/>
+    
+    <input type="text" id="colonia" name="colonia" placeholder="8. Colonia" maxlength="30"  required autofocus/>
+    
+    <input type="text" id="Municipio" name="municipio" placeholder="9. Municipio o alcaldía" maxlength="30"  required autofocus/><br>
+    </fieldset><br>
+    
+    
+<fieldset><legend>Contacto</legend>
+<input type="tel" id="celular" name="celular" placeholder="10. Tel. Celular" maxlength="30" required >
+<input type="tel" id="casa" name="casa" placeholder="11. Tel. Casa" maxlength="30"  required>
+<input type="email" id="correo" name="correo" placeholder="12. Correo electronico"  required>
+    </fieldset><br>
+    <fieldset><legend>Datos de la carrera</legend>
+
+        <select id="carre" name="carrera">
+            <option value="">---13.Carrera que cursa---</option>
+            <option value="1">Técnico en Construcción</option>
+            <option value="2">Técnico en Animacion Digital</option>
+            <option value="3">Técnico en Programacion</option></select>
+
+        <select id="espec" name="especialidad">
+            <option value="">---14. Especialidad de su carrera---</option>
+            <option value="1">Especialidad 1</option>
+            <option value="2">Especialidad 2</option>
+            <option value="3">Especialidad 3</option></select>
+</fieldset><br>
+<button type="submit"  class="button button1">Enviar</button>
+</form><br>
+<blockquote>
+<p>Aviso de privacidad simplificado: Art.31,32 y 33, Fracción I, VII y IX.</p><br>
+Los datos personales recabados en el TESCHA, serán protegidos y tratados de conformidad con los artículos dispuestos en el aviso de privacidad simplificado, de la "Ley de protección de datos personales en posesion de sujetos obligados del Estado de México y Municipios" y demas disposiciones aplicables. Por lo que únicamente serán utilizados para fines estadisticos.
+para ejercer los derechos de acceso y corrección de los datos personales recabados, será necesario acudir al Tecnológico de Estudios Superiores de Chalco, en el Departamento de Seguimiento de Egresados y Bolsa de Trabajo, ubicado en carretera federal México Cuautla sin número, Colonia la Candelaria Tlapala Chalco de México.
+    </blockquote></body>
+</html>
